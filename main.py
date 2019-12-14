@@ -159,27 +159,31 @@ while running:
             elif choice == 2:
                   player.choose_items()
                   choice = int(input("Select a Item: ")) - 1
-                  item = player.item[choice]
-                  if item.quentity > 0:
-                        item_name = item.name
-                        damg = item.dmg
-                        if item.tpe == "heal":
-                              player.heal(damg)
-                              print(f"{name} used {item_name} to heal {damg} HP")
-                        elif item.tpe == "retore":
-                              player.mp_heal(damg)
-                              print(f"{name} used {item_name} to heal {damg} HP and MP")
-                        elif item.tpe == "attack":
-                              enemy.up_hp(damg)
-                              print( f"{name} used {item_name} on {enemy.name} for {damg}")
-                        item.quentity -= 1
+                  if choice <= len(player_items) - 1:
+                        item = player.item[choice]
+                        if item.quentity > 0:
+                              item.quentity -= 1
+                              item_name = item.name
+                              damg = item.dmg
+                              if item.tpe == "heal":
+                                    player.heal(damg)
+                                    print(f"{name} used {item_name} to heal {damg} HP")
+                              elif item.tpe == "retore":
+                                    player.mp_heal(damg)
+                                    print(f"{name} used {item_name} to heal {damg} HP and MP")
+                              elif item.tpe == "attack":
+                                    enemy.up_hp(damg)
+                                    print( f"{name} used {item_name} on {enemy.name} for {damg}")
+                        else:
+                              print( "     " + Fore.RED + Style.BRIGHT + "\nNo More " + str(item.name) + " left \n" + Fore.RESET + Style.RESET_ALL)
+                              continue
                   else:
-                        print( "     " + Fore.RED + Style.BRIGHT + "\nNo More " + str(item.name) + " left \n" + Fore.RESET + Style.RESET_ALL)
+                        print(Fore.RED + Style.BRIGHT + "\ninvalid input\n" + Fore.RESET + Style.RESET_ALL)
                         continue
             else:
-                  print(Fore.RED + Style.BRIGHT + "invalid input\n" + Fore.RESET + Style.RESET_ALL)
+                  print(Fore.RED + Style.BRIGHT + "\ninvalid input\n" + Fore.RESET + Style.RESET_ALL)
                   continue
-            
+            print("test")
             # enemy tranistions 
             if defeated < 2:
                   if enemy.get_hp() == 0:

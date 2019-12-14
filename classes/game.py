@@ -187,7 +187,7 @@ class person(object):
 
     # Starting Game scene
     def start_scene(self):
-      print(Fore.BLUE + Style.BRIGHT + "____________" + "___________________________________________" +
+      print(Fore.BLUE + Style.BRIGHT + " " * 10 + "_" * 50 + "\n" +
       Style.RESET_ALL + Fore.RESET)
       print("            " + self.name + " was called to the kingdom of dwarfs to ")
       sleep(2)
@@ -206,6 +206,6 @@ class person(object):
       print(".", end="")
       sleep(1.8)
       print(".")
-      print(Fore.BLUE + Style.BRIGHT + "____________" + "__________________________________________\n" +
+      print(Fore.BLUE + Style.BRIGHT + " " * 10 + "_" * 50 + "\n" +
       Style.RESET_ALL + Fore.RESET)
       sleep(2)
