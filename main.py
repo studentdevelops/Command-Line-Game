@@ -183,7 +183,7 @@ while running:
             else:
                   print(Fore.RED + Style.BRIGHT + "\ninvalid input\n" + Fore.RESET + Style.RESET_ALL)
                   continue
-            print("test")
+            
             # enemy tranistions 
             if defeated < 2:
                   if enemy.get_hp() == 0:

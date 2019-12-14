@@ -168,7 +168,7 @@ class person(object):
     # transition of enemy
     def transition(self,i):
         about_enemy_lumos = "is a Supreme MAGE, A very powerfull sorcerer"
-        about_enemy_Alipsh = "is a demon warrior, A extreme strengthened demon"
+        about_enemy_Alipsh = "is a demon warrior,extreme strengthened demon"
         about = [about_enemy_lumos, about_enemy_Alipsh]
         sleep(1.2)
         print("." , end='')
