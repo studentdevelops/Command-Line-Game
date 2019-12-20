@@ -17,7 +17,7 @@ Once the boring fight starts there are basic 3 things you can do in it and they 
 3. items : some items to help maybe 
 
 ![alt text](https://github.com/studentdevelops/Command-Line-Game/blob/master/extras/Attack1.PNG)
-![alt text](![alt text](https://github.com/studentdevelops/Command-Line-Game/blob/master/extras/Attack2.PNG)
+![alt text](https://github.com/studentdevelops/Command-Line-Game/blob/master/extras/Attack2.PNG)
 ![alt text](https://github.com/studentdevelops/Command-Line-Game/blob/master/extras/Items.PNG)
 
 Just a simple game made while learning
