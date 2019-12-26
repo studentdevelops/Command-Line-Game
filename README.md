@@ -8,7 +8,7 @@ This is how it should start
 
 ![alt text](https://github.com/studentdevelops/Command-Line-Game/blob/master/extras/Start_scene.PNG)
 
-Once the boring fight starts there are basic 3 things you can do in it and they are
+Once the fight starts there are basic 3 things you can do in it and they are
 
 1. Attac : refers to basic melee
 
