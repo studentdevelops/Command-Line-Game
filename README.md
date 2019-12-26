@@ -4,7 +4,7 @@ Its a real simple command line game with no effects or visual
 
 made it while learning python to have some fun
 
-This is how it should start if i did not messed up
+This is how it should start 
 
 ![alt text](https://github.com/studentdevelops/Command-Line-Game/blob/master/extras/Start_scene.PNG)
 
